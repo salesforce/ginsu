@@ -1,0 +1,16 @@
+.classpath
+.project
+.settings/
+target/
+*~
+\#*
+.m2/
+.metadata/
+.gitattributes
+.factorypath
+.idea/
+**/*.iml
+**/*.zip
+*.db
+*.out
+*.csv
