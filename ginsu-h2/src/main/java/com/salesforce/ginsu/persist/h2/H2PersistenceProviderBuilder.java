@@ -20,7 +20,7 @@ import static java.util.Objects.requireNonNull;
 public class H2PersistenceProviderBuilder {
 
     private static final String DEFAULT_JDBC_DRIVER = "org.h2.Driver";
-    private static final String DEFAULT_CONNECTION_STRING_FORMAT = "jdbc:h2:%s;CACHE_SIZE=131072";
+    private static final String DEFAULT_CONNECTION_STRING_FORMAT = "jdbc:h2:%s;CACHE_SIZE=131072;AUTO_SERVER=TRUE";
 
     // During load, this doesn't help and actually hurts a little.  OS paging I assume.  Probably better off implementing
     // our own caching for upserts.  It helps when querying, though.
